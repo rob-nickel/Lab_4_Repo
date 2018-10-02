@@ -1,0 +1,53 @@
+<html>
+<head>
+        <title> Multiplication Table </title>
+        <link href="multiplication.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+        This is a 100 X 100 Multiplication Table
+        <br>
+
+
+        <table style="width:100%">
+
+                <tr>
+                        <th>X</th>
+                        <?php
+                                for ($i = 1; $i <= 100; $i++){
+                                        echo "<th>" . $i . "</th>";
+                                }
+                                echo "<th> X </th>";
+
+                        ?>
+                </tr>
+                        <?php
+
+                                for($i = 1; $i <= 100; $i++) {
+                                        echo "<tr>";
+                                        echo "<th>" . $i . "</th>";
+                                        for ($j = 1; $j <= 100; $j++) {
+                                                $p = $i * $j;
+
+                                                echo "<td>" . $p . "</td>";
+
+                                        }
+                                        echo "<th>" . $i . "</th>";
+                                        echo "</tr>";
+                                }
+
+                        ?>
+                <tr>
+                        <th>X</th>
+                        <?php
+                                for ($i = 1; $i <= 100; $i++){
+                                        echo "<th>" . $i . "</th>";
+                                }
+                                echo "<th> X </th>";
+                        ?>
+                </tr>
+        </table>
+
+
+</body>
+</html>

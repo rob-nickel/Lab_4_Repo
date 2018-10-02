@@ -1,0 +1,45 @@
+<html>
+<head>
+        <title> My Carrot Webstore </title>
+        <link href="style.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="formChecker.js">
+        </script>
+</head>
+<body>
+        <b> <u> Welcome to the Carrot Webstore! </b></u>
+        <br>
+
+        <br>
+        <form action="customerBackend.php" method="post" onsubmit="return validate()">
+                Username: <input type="email" name="name" id="name">
+                <br>
+                Password: <input type="password" name="password" id="password">
+                <br>
+                <br>
+                Baby Carrot ($1)
+                <br>
+                <input type="number" id="baby" name="baby">
+                <br>
+                <br>
+                10 Karat Gold Necklace ($1,399)
+                <br>
+                <input type="number" id="necklace" name="necklace">
+                <br>
+                <br>
+                Carrot Cake ($45)
+                <br>
+                <input type="number" id="cake" name="cake">
+                <br>
+                <br>
+                What type of shipping?
+                <br>
+                <input type="radio" id="ship1" name="ship" value="0">7 Day Shipping (Free)<br>
+                <input type="radio" id="ship2" name="ship" value="50">Overnight ($50)<br>
+                <input type="radio" id="ship3" name="ship" value="5">3 Day ($5)
+                <br>
+                <input type="submit" value="Complete Purchase">
+        </form>
+        <br>
+
+</body>
+</html>
